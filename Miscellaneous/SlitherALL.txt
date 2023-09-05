@@ -1,0 +1,311 @@
+C:\Users\malateef\Desktop\VulnerabilitySamples>slither . --checklist
+'solc --version' running
+'solc .\AccessControl.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,C:\Users\malateef\Desktop\VulnerabilitySamples' running
+Compilation warnings/errors on .\AccessControl.sol:
+Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.
+--> AccessControl.sol
+
+
+'solc --version' running
+'solc .\Integer_Overflow_Underflow.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,C:\Users\malateef\Desktop\VulnerabilitySamples' running
+Compilation warnings/errors on .\Integer_Overflow_Underflow.sol:
+Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.
+--> Integer_Overflow_Underflow.sol
+
+
+'solc --version' running
+'solc .\reEntrancy.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,C:\Users\malateef\Desktop\VulnerabilitySamples' running
+Compilation warnings/errors on .\reEntrancy.sol:
+Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.
+--> reEntrancy.sol
+
+
+'solc --version' running
+'solc .\UncheckedExternalCall.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,C:\Users\malateef\Desktop\VulnerabilitySamples' running
+Compilation warnings/errors on .\UncheckedExternalCall.sol:
+Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.
+--> UncheckedExternalCall.sol
+
+Warning: Return value of low-level calls not used.
+ --> UncheckedExternalCall.sol:6:9:
+  |
+6 |         _target.call{value: 1 ether}("");
+  |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+'solc --version' running
+'solc .\UninitializedVariable.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,C:\Users\malateef\Desktop\VulnerabilitySamples' running
+Compilation warnings/errors on .\UninitializedVariable.sol:
+Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.
+--> UninitializedVariable.sol
+
+
+INFO:Detectors:
+AccessControl.changeOwner(address) (AccessControl.sol#11-13) should emit an event for:
+        - owner = _newOwner (AccessControl.sol#12)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#missing-events-access-control
+INFO:Detectors:
+AccessControl.changeOwner(address)._newOwner (AccessControl.sol#11) lacks a zero-check on :
+                - owner = _newOwner (AccessControl.sol#12)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#missing-zero-address-validation
+INFO:Detectors:
+Pragma version^0.8.0 (AccessControl.sol#1) allows old versions
+solc-0.8.20 is not recommended for deployment
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+INFO:Detectors:
+Parameter AccessControl.changeOwner(address)._newOwner (AccessControl.sol#11) is not in mixedCase
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
+INFO:Detectors:
+Pragma version^0.8.0 (Integer_Overflow_Underflow.sol#1) allows old versions
+solc-0.8.20 is not recommended for deployment
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+INFO:Detectors:
+Parameter IntegerOverflow.addToBalance(uint256)._amount (Integer_Overflow_Underflow.sol#6) is not in mixedCase
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
+INFO:Detectors:
+Reentrancy in reEntrancy.withdraw(uint256) (reEntrancy.sol#6-12):
+        External calls:
+        - (success) = msg.sender.call{value: _amount}() (reEntrancy.sol#8)
+        State variables written after the call(s):
+        - balances[msg.sender] -= _amount (reEntrancy.sol#10)
+        reEntrancy.balances (reEntrancy.sol#4) can be used in cross function reentrancies:
+        - reEntrancy.withdraw(uint256) (reEntrancy.sol#6-12)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities
+INFO:Detectors:
+Pragma version^0.8.0 (reEntrancy.sol#1) allows old versions
+solc-0.8.20 is not recommended for deployment
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+INFO:Detectors:
+Low level call in reEntrancy.withdraw(uint256) (reEntrancy.sol#6-12):
+        - (success) = msg.sender.call{value: _amount}() (reEntrancy.sol#8)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls
+INFO:Detectors:
+Contract reEntrancy (reEntrancy.sol#3-13) is not in CapWords
+Parameter reEntrancy.withdraw(uint256)._amount (reEntrancy.sol#6) is not in mixedCase
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
+INFO:Detectors:
+UncheckedExternalCall.callExternal(address) (UncheckedExternalCall.sol#4-7) sends eth to arbitrary user
+        Dangerous calls:
+        - _target.call{value: 1000000000000000000}() (UncheckedExternalCall.sol#6)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#functions-that-send-ether-to-arbitrary-destinations
+INFO:Detectors:
+UncheckedExternalCall.callExternal(address) (UncheckedExternalCall.sol#4-7) ignores return value by _target.call{value: 1000000000000000000}() (UncheckedExternalCall.sol#6)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#unchecked-low-level-calls
+INFO:Detectors:
+UncheckedExternalCall.callExternal(address)._target (UncheckedExternalCall.sol#4) lacks a zero-check on :
+                - _target.call{value: 1000000000000000000}() (UncheckedExternalCall.sol#6)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#missing-zero-address-validation
+INFO:Detectors:
+Pragma version^0.8.0 (UncheckedExternalCall.sol#1) allows old versions
+solc-0.8.20 is not recommended for deployment
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+INFO:Detectors:
+Low level call in UncheckedExternalCall.callExternal(address) (UncheckedExternalCall.sol#4-7):
+        - _target.call{value: 1000000000000000000}() (UncheckedExternalCall.sol#6)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls
+INFO:Detectors:
+Parameter UncheckedExternalCall.callExternal(address)._target (UncheckedExternalCall.sol#4) is not in mixedCase
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
+INFO:Detectors:
+UninitializedVariable.uninitializedValue (UninitializedVariable.sol#4) is never initialized. It is used in:
+        - UninitializedVariable.getValue() (UninitializedVariable.sol#6-8)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#uninitialized-state-variables
+INFO:Detectors:
+Pragma version^0.8.0 (UninitializedVariable.sol#1) allows old versions
+solc-0.8.20 is not recommended for deployment
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+INFO:Detectors:
+UninitializedVariable.uninitializedValue (UninitializedVariable.sol#4) should be constant
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#state-variables-that-could-be-declared-constant
+**THIS CHECKLIST IS NOT COMPLETE**. Use `--show-ignored-findings` to show all the results.
+Summary
+ - [events-access](#events-access) (1 results) (Low)
+ - [missing-zero-check](#missing-zero-check) (2 results) (Low)
+ - [solc-version](#solc-version) (10 results) (Informational)
+ - [naming-convention](#naming-convention) (5 results) (Informational)
+ - [reentrancy-eth](#reentrancy-eth) (1 results) (High)
+ - [low-level-calls](#low-level-calls) (2 results) (Informational)
+ - [arbitrary-send-eth](#arbitrary-send-eth) (1 results) (High)
+ - [unchecked-lowlevel](#unchecked-lowlevel) (1 results) (Medium)
+ - [uninitialized-state](#uninitialized-state) (1 results) (High)
+ - [constable-states](#constable-states) (1 results) (Optimization)
+## events-access
+Impact: Low
+Confidence: Medium
+ - [ ] ID-0
+[AccessControl.changeOwner(address)](AccessControl.sol#L11-L13) should emit an event for:
+        - [owner = _newOwner](AccessControl.sol#L12)
+
+AccessControl.sol#L11-L13
+
+
+## missing-zero-check
+Impact: Low
+Confidence: Medium
+ - [ ] ID-1
+[AccessControl.changeOwner(address)._newOwner](AccessControl.sol#L11) lacks a zero-check on :
+                - [owner = _newOwner](AccessControl.sol#L12)
+
+AccessControl.sol#L11
+
+
+ - [ ] ID-2
+[UncheckedExternalCall.callExternal(address)._target](UncheckedExternalCall.sol#L4) lacks a zero-check on :
+                - [_target.call{value: 1000000000000000000}()](UncheckedExternalCall.sol#L6)
+
+UncheckedExternalCall.sol#L4
+
+
+## solc-version
+Impact: Informational
+Confidence: High
+ - [ ] ID-3
+solc-0.8.20 is not recommended for deployment
+
+ - [ ] ID-4
+Pragma version[^0.8.0](AccessControl.sol#L1) allows old versions
+
+AccessControl.sol#L1
+
+
+ - [ ] ID-5
+solc-0.8.20 is not recommended for deployment
+
+ - [ ] ID-6
+Pragma version[^0.8.0](Integer_Overflow_Underflow.sol#L1) allows old versions
+
+Integer_Overflow_Underflow.sol#L1
+
+
+ - [ ] ID-7
+solc-0.8.20 is not recommended for deployment
+
+ - [ ] ID-8
+Pragma version[^0.8.0](reEntrancy.sol#L1) allows old versions
+
+reEntrancy.sol#L1
+
+
+ - [ ] ID-9
+solc-0.8.20 is not recommended for deployment
+
+ - [ ] ID-10
+Pragma version[^0.8.0](UncheckedExternalCall.sol#L1) allows old versions
+
+UncheckedExternalCall.sol#L1
+
+
+ - [ ] ID-11
+Pragma version[^0.8.0](UninitializedVariable.sol#L1) allows old versions
+
+UninitializedVariable.sol#L1
+
+
+ - [ ] ID-12
+solc-0.8.20 is not recommended for deployment
+
+## naming-convention
+Impact: Informational
+Confidence: High
+ - [ ] ID-13
+Parameter [AccessControl.changeOwner(address)._newOwner](AccessControl.sol#L11) is not in mixedCase
+
+AccessControl.sol#L11
+
+
+ - [ ] ID-14
+Parameter [IntegerOverflow.addToBalance(uint256)._amount](Integer_Overflow_Underflow.sol#L6) is not in mixedCase
+
+Integer_Overflow_Underflow.sol#L6
+
+
+ - [ ] ID-15
+Contract [reEntrancy](reEntrancy.sol#L3-L13) is not in CapWords
+
+reEntrancy.sol#L3-L13
+
+
+ - [ ] ID-16
+Parameter [reEntrancy.withdraw(uint256)._amount](reEntrancy.sol#L6) is not in mixedCase
+
+reEntrancy.sol#L6
+
+
+ - [ ] ID-17
+Parameter [UncheckedExternalCall.callExternal(address)._target](UncheckedExternalCall.sol#L4) is not in mixedCase
+
+UncheckedExternalCall.sol#L4
+
+
+## reentrancy-eth
+Impact: High
+Confidence: Medium
+ - [ ] ID-18
+Reentrancy in [reEntrancy.withdraw(uint256)](reEntrancy.sol#L6-L12):
+        External calls:
+        - [(success) = msg.sender.call{value: _amount}()](reEntrancy.sol#L8)
+        State variables written after the call(s):
+        - [balances[msg.sender] -= _amount](reEntrancy.sol#L10)
+        [reEntrancy.balances](reEntrancy.sol#L4) can be used in cross function reentrancies:
+        - [reEntrancy.withdraw(uint256)](reEntrancy.sol#L6-L12)
+
+reEntrancy.sol#L6-L12
+
+
+## low-level-calls
+Impact: Informational
+Confidence: High
+ - [ ] ID-19
+Low level call in [reEntrancy.withdraw(uint256)](reEntrancy.sol#L6-L12):
+        - [(success) = msg.sender.call{value: _amount}()](reEntrancy.sol#L8)
+
+reEntrancy.sol#L6-L12
+
+
+ - [ ] ID-20
+Low level call in [UncheckedExternalCall.callExternal(address)](UncheckedExternalCall.sol#L4-L7):
+        - [_target.call{value: 1000000000000000000}()](UncheckedExternalCall.sol#L6)
+
+UncheckedExternalCall.sol#L4-L7
+
+
+## arbitrary-send-eth
+Impact: High
+Confidence: Medium
+ - [ ] ID-21
+[UncheckedExternalCall.callExternal(address)](UncheckedExternalCall.sol#L4-L7) sends eth to arbitrary user
+        Dangerous calls:
+        - [_target.call{value: 1000000000000000000}()](UncheckedExternalCall.sol#L6)
+
+UncheckedExternalCall.sol#L4-L7
+
+
+## unchecked-lowlevel
+Impact: Medium
+Confidence: Medium
+ - [ ] ID-22
+[UncheckedExternalCall.callExternal(address)](UncheckedExternalCall.sol#L4-L7) ignores return value by [_target.call{value: 1000000000000000000}()](UncheckedExternalCall.sol#L6)
+
+UncheckedExternalCall.sol#L4-L7
+
+
+## uninitialized-state
+Impact: High
+Confidence: High
+ - [ ] ID-23
+[UninitializedVariable.uninitializedValue](UninitializedVariable.sol#L4) is never initialized. It is used in:
+        - [UninitializedVariable.getValue()](UninitializedVariable.sol#L6-L8)
+
+UninitializedVariable.sol#L4
+
+
+## constable-states
+Impact: Optimization
+Confidence: High
+ - [ ] ID-24
+[UninitializedVariable.uninitializedValue](UninitializedVariable.sol#L4) should be constant
+
+UninitializedVariable.sol#L4
+
+
+INFO:Slither:. analyzed (5 contracts with 88 detectors), 25 result(s) found

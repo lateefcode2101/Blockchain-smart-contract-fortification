@@ -1,0 +1,2196 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nTotal number of contracts in source files: 1\nSource lines of code (SLOC) in source files: 11\nNumber of  assembly lines: 0\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m3\u001b[0m\nNumber of low issues: \u001b[92m2\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "markdown": "\nCompiled with solc\nTotal number of contracts in source files: 1\nSource lines of code (SLOC) in source files: 11\nNumber of  assembly lines: 0\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m3\u001b[0m\nNumber of low issues: \u001b[92m2\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "first_markdown_element": "",
+        "id": "10fcca322895ee9f032f668f622bfcdc4a032c6fde156e59cc9df0b1fca61175",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "AccessControl",
+                "source_mapping": {
+                  "start": 27,
+                  "length": 336,
+                  "filename_relative": "AccessControl.sol",
+                  "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\AccessControl.sol",
+                  "filename_short": "AccessControl.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                },
+                "additional_fields": {
+                  "contract_name": "AccessControl",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 1,
+                  "features": []
+                }
+              }
+            ]
+          },
+          "number_lines": 11,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 0,
+            "informational_issues": 3,
+            "low_issues": 2,
+            "medium_issues": 0,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [],
+              "description": "solc-0.8.20 is not recommended for deployment\n",
+              "markdown": "solc-0.8.20 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "5994d07edbbb82fc2013b486f41a2fa69898d896bb171a7f7c8bd767eb5b6521",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.8.0",
+                  "source_mapping": {
+                    "start": 0,
+                    "length": 23,
+                    "filename_relative": "AccessControl.sol",
+                    "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\AccessControl.sol",
+                    "filename_short": "AccessControl.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      1
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 24
+                  },
+                  "type_specific_fields": {
+                    "directive": [
+                      "solidity",
+                      "^",
+                      "0.8",
+                      ".0"
+                    ]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.8.0 (AccessControl.sol#1) allows old versions\n",
+              "markdown": "Pragma version[^0.8.0](AccessControl.sol#L1) allows old versions\n",
+              "first_markdown_element": "AccessControl.sol#L1",
+              "id": "eae046853b79481e6419ae7c74884ab061605bd2246b41e71158a60d5f4e26c3",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_newOwner",
+                  "source_mapping": {
+                    "start": 236,
+                    "length": 17,
+                    "filename_relative": "AccessControl.sol",
+                    "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\AccessControl.sol",
+                    "filename_short": "AccessControl.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      11
+                    ],
+                    "starting_column": 26,
+                    "ending_column": 43
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "changeOwner",
+                      "source_mapping": {
+                        "start": 215,
+                        "length": 145,
+                        "filename_relative": "AccessControl.sol",
+                        "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\AccessControl.sol",
+                        "filename_short": "AccessControl.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          11,
+                          12,
+                          13
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "AccessControl",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 336,
+                            "filename_relative": "AccessControl.sol",
+                            "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\AccessControl.sol",
+                            "filename_short": "AccessControl.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "changeOwner(address)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter AccessControl.changeOwner(address)._newOwner (AccessControl.sol#11) is not in mixedCase\n",
+              "markdown": "Parameter [AccessControl.changeOwner(address)._newOwner](AccessControl.sol#L11) is not in mixedCase\n",
+              "first_markdown_element": "AccessControl.sol#L11",
+              "id": "4cf9918162f757706591bad063e7aa348b54b5b9e0645e3e89fcdf471e6932a6",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "changeOwner",
+                  "source_mapping": {
+                    "start": 215,
+                    "length": 145,
+                    "filename_relative": "AccessControl.sol",
+                    "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\AccessControl.sol",
+                    "filename_short": "AccessControl.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      11,
+                      12,
+                      13
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "AccessControl",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 336,
+                        "filename_relative": "AccessControl.sol",
+                        "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\AccessControl.sol",
+                        "filename_short": "AccessControl.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    },
+                    "signature": "changeOwner(address)"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "owner = _newOwner",
+                  "source_mapping": {
+                    "start": 283,
+                    "length": 17,
+                    "filename_relative": "AccessControl.sol",
+                    "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\AccessControl.sol",
+                    "filename_short": "AccessControl.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      12
+                    ],
+                    "starting_column": 9,
+                    "ending_column": 26
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "changeOwner",
+                      "source_mapping": {
+                        "start": 215,
+                        "length": 145,
+                        "filename_relative": "AccessControl.sol",
+                        "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\AccessControl.sol",
+                        "filename_short": "AccessControl.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          11,
+                          12,
+                          13
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "AccessControl",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 336,
+                            "filename_relative": "AccessControl.sol",
+                            "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\AccessControl.sol",
+                            "filename_short": "AccessControl.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "changeOwner(address)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "AccessControl.changeOwner(address) (AccessControl.sol#11-13) should emit an event for: \n\t- owner = _newOwner (AccessControl.sol#12) \n",
+              "markdown": "[AccessControl.changeOwner(address)](AccessControl.sol#L11-L13) should emit an event for: \n\t- [owner = _newOwner](AccessControl.sol#L12) \n",
+              "first_markdown_element": "AccessControl.sol#L11-L13",
+              "id": "51e49a8c634e1e5559d100e37670349eab0c685fea9a686c3badeecb1b2f6b86",
+              "check": "events-access",
+              "impact": "Low",
+              "confidence": "Medium"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_newOwner",
+                  "source_mapping": {
+                    "start": 236,
+                    "length": 17,
+                    "filename_relative": "AccessControl.sol",
+                    "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\AccessControl.sol",
+                    "filename_short": "AccessControl.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      11
+                    ],
+                    "starting_column": 26,
+                    "ending_column": 43
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "changeOwner",
+                      "source_mapping": {
+                        "start": 215,
+                        "length": 145,
+                        "filename_relative": "AccessControl.sol",
+                        "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\AccessControl.sol",
+                        "filename_short": "AccessControl.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          11,
+                          12,
+                          13
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "AccessControl",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 336,
+                            "filename_relative": "AccessControl.sol",
+                            "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\AccessControl.sol",
+                            "filename_short": "AccessControl.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "changeOwner(address)"
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "owner = _newOwner",
+                  "source_mapping": {
+                    "start": 283,
+                    "length": 17,
+                    "filename_relative": "AccessControl.sol",
+                    "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\AccessControl.sol",
+                    "filename_short": "AccessControl.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      12
+                    ],
+                    "starting_column": 9,
+                    "ending_column": 26
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "changeOwner",
+                      "source_mapping": {
+                        "start": 215,
+                        "length": 145,
+                        "filename_relative": "AccessControl.sol",
+                        "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\AccessControl.sol",
+                        "filename_short": "AccessControl.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          11,
+                          12,
+                          13
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "AccessControl",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 336,
+                            "filename_relative": "AccessControl.sol",
+                            "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\AccessControl.sol",
+                            "filename_short": "AccessControl.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "changeOwner(address)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "AccessControl.changeOwner(address)._newOwner (AccessControl.sol#11) lacks a zero-check on :\n\t\t- owner = _newOwner (AccessControl.sol#12)\n",
+              "markdown": "[AccessControl.changeOwner(address)._newOwner](AccessControl.sol#L11) lacks a zero-check on :\n\t\t- [owner = _newOwner](AccessControl.sol#L12)\n",
+              "first_markdown_element": "AccessControl.sol#L11",
+              "id": "0f720bcb6fd8679a45e2d67e4f7c6e2feb8ffb4c3e684a4a19506437aa3109e0",
+              "check": "missing-zero-check",
+              "impact": "Low",
+              "confidence": "Medium"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      },
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nTotal number of contracts in source files: 1\nSource lines of code (SLOC) in source files: 7\nNumber of  assembly lines: 0\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m3\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "markdown": "\nCompiled with solc\nTotal number of contracts in source files: 1\nSource lines of code (SLOC) in source files: 7\nNumber of  assembly lines: 0\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m3\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "first_markdown_element": "",
+        "id": "142002127028848f83f5465dd25119989fc578f06b06e02347718c87edbf284a",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "IntegerOverflow",
+                "source_mapping": {
+                  "start": 27,
+                  "length": 183,
+                  "filename_relative": "Integer_Overflow_Underflow.sol",
+                  "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\Integer_Overflow_Underflow.sol",
+                  "filename_short": "Integer_Overflow_Underflow.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                },
+                "additional_fields": {
+                  "contract_name": "IntegerOverflow",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 1,
+                  "features": []
+                }
+              }
+            ]
+          },
+          "number_lines": 7,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 0,
+            "informational_issues": 3,
+            "low_issues": 0,
+            "medium_issues": 0,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [],
+              "description": "solc-0.8.20 is not recommended for deployment\n",
+              "markdown": "solc-0.8.20 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "5994d07edbbb82fc2013b486f41a2fa69898d896bb171a7f7c8bd767eb5b6521",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.8.0",
+                  "source_mapping": {
+                    "start": 0,
+                    "length": 23,
+                    "filename_relative": "Integer_Overflow_Underflow.sol",
+                    "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\Integer_Overflow_Underflow.sol",
+                    "filename_short": "Integer_Overflow_Underflow.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      1
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 24
+                  },
+                  "type_specific_fields": {
+                    "directive": [
+                      "solidity",
+                      "^",
+                      "0.8",
+                      ".0"
+                    ]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.8.0 (Integer_Overflow_Underflow.sol#1) allows old versions\n",
+              "markdown": "Pragma version[^0.8.0](Integer_Overflow_Underflow.sol#L1) allows old versions\n",
+              "first_markdown_element": "Integer_Overflow_Underflow.sol#L1",
+              "id": "a70c9fd8d4d9f5fb9d6081933ca9e20f555097318b860d8585301c7632b2bfe7",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_amount",
+                  "source_mapping": {
+                    "start": 112,
+                    "length": 15,
+                    "filename_relative": "Integer_Overflow_Underflow.sol",
+                    "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\Integer_Overflow_Underflow.sol",
+                    "filename_short": "Integer_Overflow_Underflow.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      6
+                    ],
+                    "starting_column": 27,
+                    "ending_column": 42
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "addToBalance",
+                      "source_mapping": {
+                        "start": 90,
+                        "length": 117,
+                        "filename_relative": "Integer_Overflow_Underflow.sol",
+                        "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\Integer_Overflow_Underflow.sol",
+                        "filename_short": "Integer_Overflow_Underflow.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          6,
+                          7,
+                          8
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "IntegerOverflow",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 183,
+                            "filename_relative": "Integer_Overflow_Underflow.sol",
+                            "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\Integer_Overflow_Underflow.sol",
+                            "filename_short": "Integer_Overflow_Underflow.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "addToBalance(uint256)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter IntegerOverflow.addToBalance(uint256)._amount (Integer_Overflow_Underflow.sol#6) is not in mixedCase\n",
+              "markdown": "Parameter [IntegerOverflow.addToBalance(uint256)._amount](Integer_Overflow_Underflow.sol#L6) is not in mixedCase\n",
+              "first_markdown_element": "Integer_Overflow_Underflow.sol#L6",
+              "id": "13794f676e3bddded023d96d08c658f41509c73344ae83e840276740ed98dc9a",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      },
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nTotal number of contracts in source files: 1\nSource lines of code (SLOC) in source files: 11\nNumber of  assembly lines: 0\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m5\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[91m1\u001b[0m\n",
+        "markdown": "\nCompiled with solc\nTotal number of contracts in source files: 1\nSource lines of code (SLOC) in source files: 11\nNumber of  assembly lines: 0\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m5\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[91m1\u001b[0m\n",
+        "first_markdown_element": "",
+        "id": "d5fe20c803c2106d847be8d053b53ef7e822d1ec33062bde9f3647a3b13fcc03",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "reEntrancy",
+                "source_mapping": {
+                  "start": 27,
+                  "length": 321,
+                  "filename_relative": "reEntrancy.sol",
+                  "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\reEntrancy.sol",
+                  "filename_short": "reEntrancy.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                },
+                "additional_fields": {
+                  "contract_name": "reEntrancy",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 1,
+                  "features": [
+                    "Send ETH"
+                  ]
+                }
+              }
+            ]
+          },
+          "number_lines": 11,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 0,
+            "informational_issues": 5,
+            "low_issues": 0,
+            "medium_issues": 0,
+            "high_issues": 1
+          },
+          "detectors": [
+            {
+              "elements": [],
+              "description": "solc-0.8.20 is not recommended for deployment\n",
+              "markdown": "solc-0.8.20 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "5994d07edbbb82fc2013b486f41a2fa69898d896bb171a7f7c8bd767eb5b6521",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.8.0",
+                  "source_mapping": {
+                    "start": 0,
+                    "length": 23,
+                    "filename_relative": "reEntrancy.sol",
+                    "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\reEntrancy.sol",
+                    "filename_short": "reEntrancy.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      1
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 24
+                  },
+                  "type_specific_fields": {
+                    "directive": [
+                      "solidity",
+                      "^",
+                      "0.8",
+                      ".0"
+                    ]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.8.0 (reEntrancy.sol#1) allows old versions\n",
+              "markdown": "Pragma version[^0.8.0](reEntrancy.sol#L1) allows old versions\n",
+              "first_markdown_element": "reEntrancy.sol#L1",
+              "id": "7b7eb0589e27b907544059604980ffb59913979304e17ee7fb5815ab0b31c1a2",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "withdraw",
+                  "source_mapping": {
+                    "start": 98,
+                    "length": 247,
+                    "filename_relative": "reEntrancy.sol",
+                    "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\reEntrancy.sol",
+                    "filename_short": "reEntrancy.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "reEntrancy",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 321,
+                        "filename_relative": "reEntrancy.sol",
+                        "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\reEntrancy.sol",
+                        "filename_short": "reEntrancy.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    },
+                    "signature": "withdraw(uint256)"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "(success) = msg.sender.call{value: _amount}()",
+                  "source_mapping": {
+                    "start": 202,
+                    "length": 54,
+                    "filename_relative": "reEntrancy.sol",
+                    "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\reEntrancy.sol",
+                    "filename_short": "reEntrancy.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      8
+                    ],
+                    "starting_column": 9,
+                    "ending_column": 63
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "withdraw",
+                      "source_mapping": {
+                        "start": 98,
+                        "length": 247,
+                        "filename_relative": "reEntrancy.sol",
+                        "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\reEntrancy.sol",
+                        "filename_short": "reEntrancy.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "reEntrancy",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 321,
+                            "filename_relative": "reEntrancy.sol",
+                            "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\reEntrancy.sol",
+                            "filename_short": "reEntrancy.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "withdraw(uint256)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "Low level call in reEntrancy.withdraw(uint256) (reEntrancy.sol#6-12):\n\t- (success) = msg.sender.call{value: _amount}() (reEntrancy.sol#8)\n",
+              "markdown": "Low level call in [reEntrancy.withdraw(uint256)](reEntrancy.sol#L6-L12):\n\t- [(success) = msg.sender.call{value: _amount}()](reEntrancy.sol#L8)\n",
+              "first_markdown_element": "reEntrancy.sol#L6-L12",
+              "id": "0a4cbcc57fb1611c353a5da1c9c19f5242769e6df39cddecda10b2a959b2f184",
+              "check": "low-level-calls",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "contract",
+                  "name": "reEntrancy",
+                  "source_mapping": {
+                    "start": 27,
+                    "length": 321,
+                    "filename_relative": "reEntrancy.sol",
+                    "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\reEntrancy.sol",
+                    "filename_short": "reEntrancy.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      3,
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 2
+                  },
+                  "additional_fields": {
+                    "target": "contract",
+                    "convention": "CapWords"
+                  }
+                }
+              ],
+              "description": "Contract reEntrancy (reEntrancy.sol#3-13) is not in CapWords\n",
+              "markdown": "Contract [reEntrancy](reEntrancy.sol#L3-L13) is not in CapWords\n",
+              "first_markdown_element": "reEntrancy.sol#L3-L13",
+              "id": "0650c5c89d2a7bcd149355af415a09799ca2a23501f80f08486667e0952879cd",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_amount",
+                  "source_mapping": {
+                    "start": 116,
+                    "length": 15,
+                    "filename_relative": "reEntrancy.sol",
+                    "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\reEntrancy.sol",
+                    "filename_short": "reEntrancy.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      6
+                    ],
+                    "starting_column": 23,
+                    "ending_column": 38
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "withdraw",
+                      "source_mapping": {
+                        "start": 98,
+                        "length": 247,
+                        "filename_relative": "reEntrancy.sol",
+                        "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\reEntrancy.sol",
+                        "filename_short": "reEntrancy.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "reEntrancy",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 321,
+                            "filename_relative": "reEntrancy.sol",
+                            "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\reEntrancy.sol",
+                            "filename_short": "reEntrancy.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "withdraw(uint256)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter reEntrancy.withdraw(uint256)._amount (reEntrancy.sol#6) is not in mixedCase\n",
+              "markdown": "Parameter [reEntrancy.withdraw(uint256)._amount](reEntrancy.sol#L6) is not in mixedCase\n",
+              "first_markdown_element": "reEntrancy.sol#L6",
+              "id": "3dd602777ef0431475501b9cd261eedcafceff2f5529f030357f93763b5aee7c",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "withdraw",
+                  "source_mapping": {
+                    "start": 98,
+                    "length": 247,
+                    "filename_relative": "reEntrancy.sol",
+                    "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\reEntrancy.sol",
+                    "filename_short": "reEntrancy.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "reEntrancy",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 321,
+                        "filename_relative": "reEntrancy.sol",
+                        "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\reEntrancy.sol",
+                        "filename_short": "reEntrancy.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    },
+                    "signature": "withdraw(uint256)"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "(success) = msg.sender.call{value: _amount}()",
+                  "source_mapping": {
+                    "start": 202,
+                    "length": 54,
+                    "filename_relative": "reEntrancy.sol",
+                    "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\reEntrancy.sol",
+                    "filename_short": "reEntrancy.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      8
+                    ],
+                    "starting_column": 9,
+                    "ending_column": 63
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "withdraw",
+                      "source_mapping": {
+                        "start": 98,
+                        "length": 247,
+                        "filename_relative": "reEntrancy.sol",
+                        "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\reEntrancy.sol",
+                        "filename_short": "reEntrancy.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "reEntrancy",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 321,
+                            "filename_relative": "reEntrancy.sol",
+                            "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\reEntrancy.sol",
+                            "filename_short": "reEntrancy.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "withdraw(uint256)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "underlying_type": "external_calls"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "balances[msg.sender] -= _amount",
+                  "source_mapping": {
+                    "start": 295,
+                    "length": 31,
+                    "filename_relative": "reEntrancy.sol",
+                    "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\reEntrancy.sol",
+                    "filename_short": "reEntrancy.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      10
+                    ],
+                    "starting_column": 13,
+                    "ending_column": 44
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "withdraw",
+                      "source_mapping": {
+                        "start": 98,
+                        "length": 247,
+                        "filename_relative": "reEntrancy.sol",
+                        "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\reEntrancy.sol",
+                        "filename_short": "reEntrancy.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "reEntrancy",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 321,
+                            "filename_relative": "reEntrancy.sol",
+                            "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\reEntrancy.sol",
+                            "filename_short": "reEntrancy.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "withdraw(uint256)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "underlying_type": "variables_written",
+                    "variable_name": "balances"
+                  }
+                }
+              ],
+              "description": "Reentrancy in reEntrancy.withdraw(uint256) (reEntrancy.sol#6-12):\n\tExternal calls:\n\t- (success) = msg.sender.call{value: _amount}() (reEntrancy.sol#8)\n\tState variables written after the call(s):\n\t- balances[msg.sender] -= _amount (reEntrancy.sol#10)\n\treEntrancy.balances (reEntrancy.sol#4) can be used in cross function reentrancies:\n\t- reEntrancy.withdraw(uint256) (reEntrancy.sol#6-12)\n",
+              "markdown": "Reentrancy in [reEntrancy.withdraw(uint256)](reEntrancy.sol#L6-L12):\n\tExternal calls:\n\t- [(success) = msg.sender.call{value: _amount}()](reEntrancy.sol#L8)\n\tState variables written after the call(s):\n\t- [balances[msg.sender] -= _amount](reEntrancy.sol#L10)\n\t[reEntrancy.balances](reEntrancy.sol#L4) can be used in cross function reentrancies:\n\t- [reEntrancy.withdraw(uint256)](reEntrancy.sol#L6-L12)\n",
+              "first_markdown_element": "reEntrancy.sol#L6-L12",
+              "id": "8380c83a09b78c8cf52b1a1aa97860f30c317ac79be71f720b5327517dbd4211",
+              "check": "reentrancy-eth",
+              "impact": "High",
+              "confidence": "Medium"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      },
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nTotal number of contracts in source files: 1\nSource lines of code (SLOC) in source files: 6\nNumber of  assembly lines: 0\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m4\u001b[0m\nNumber of low issues: \u001b[92m1\u001b[0m\nNumber of medium issues: \u001b[93m1\u001b[0m\nNumber of high issues: \u001b[91m1\u001b[0m\n",
+        "markdown": "\nCompiled with solc\nTotal number of contracts in source files: 1\nSource lines of code (SLOC) in source files: 6\nNumber of  assembly lines: 0\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m4\u001b[0m\nNumber of low issues: \u001b[92m1\u001b[0m\nNumber of medium issues: \u001b[93m1\u001b[0m\nNumber of high issues: \u001b[91m1\u001b[0m\n",
+        "first_markdown_element": "",
+        "id": "5001b738e42c0d342e5c4118e26052623d9185f07efb58f632973ae2b051bb1b",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "UncheckedExternalCall",
+                "source_mapping": {
+                  "start": 27,
+                  "length": 218,
+                  "filename_relative": "UncheckedExternalCall.sol",
+                  "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\UncheckedExternalCall.sol",
+                  "filename_short": "UncheckedExternalCall.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                },
+                "additional_fields": {
+                  "contract_name": "UncheckedExternalCall",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 1,
+                  "features": [
+                    "Send ETH"
+                  ]
+                }
+              }
+            ]
+          },
+          "number_lines": 6,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 0,
+            "informational_issues": 4,
+            "low_issues": 1,
+            "medium_issues": 1,
+            "high_issues": 1
+          },
+          "detectors": [
+            {
+              "elements": [],
+              "description": "solc-0.8.20 is not recommended for deployment\n",
+              "markdown": "solc-0.8.20 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "5994d07edbbb82fc2013b486f41a2fa69898d896bb171a7f7c8bd767eb5b6521",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.8.0",
+                  "source_mapping": {
+                    "start": 0,
+                    "length": 23,
+                    "filename_relative": "UncheckedExternalCall.sol",
+                    "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\UncheckedExternalCall.sol",
+                    "filename_short": "UncheckedExternalCall.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      1
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 24
+                  },
+                  "type_specific_fields": {
+                    "directive": [
+                      "solidity",
+                      "^",
+                      "0.8",
+                      ".0"
+                    ]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.8.0 (UncheckedExternalCall.sol#1) allows old versions\n",
+              "markdown": "Pragma version[^0.8.0](UncheckedExternalCall.sol#L1) allows old versions\n",
+              "first_markdown_element": "UncheckedExternalCall.sol#L1",
+              "id": "8f35d21392380d0f0149911f91670d893b962eaf1cb4651fec19b7b5bff6aba1",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "callExternal",
+                  "source_mapping": {
+                    "start": 65,
+                    "length": 177,
+                    "filename_relative": "UncheckedExternalCall.sol",
+                    "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\UncheckedExternalCall.sol",
+                    "filename_short": "UncheckedExternalCall.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      4,
+                      5,
+                      6,
+                      7
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "UncheckedExternalCall",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 218,
+                        "filename_relative": "UncheckedExternalCall.sol",
+                        "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\UncheckedExternalCall.sol",
+                        "filename_short": "UncheckedExternalCall.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    },
+                    "signature": "callExternal(address)"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "_target.call{value: 1000000000000000000}()",
+                  "source_mapping": {
+                    "start": 202,
+                    "length": 32,
+                    "filename_relative": "UncheckedExternalCall.sol",
+                    "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\UncheckedExternalCall.sol",
+                    "filename_short": "UncheckedExternalCall.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      6
+                    ],
+                    "starting_column": 9,
+                    "ending_column": 41
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "callExternal",
+                      "source_mapping": {
+                        "start": 65,
+                        "length": 177,
+                        "filename_relative": "UncheckedExternalCall.sol",
+                        "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\UncheckedExternalCall.sol",
+                        "filename_short": "UncheckedExternalCall.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          4,
+                          5,
+                          6,
+                          7
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "UncheckedExternalCall",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 218,
+                            "filename_relative": "UncheckedExternalCall.sol",
+                            "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\UncheckedExternalCall.sol",
+                            "filename_short": "UncheckedExternalCall.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "callExternal(address)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "Low level call in UncheckedExternalCall.callExternal(address) (UncheckedExternalCall.sol#4-7):\n\t- _target.call{value: 1000000000000000000}() (UncheckedExternalCall.sol#6)\n",
+              "markdown": "Low level call in [UncheckedExternalCall.callExternal(address)](UncheckedExternalCall.sol#L4-L7):\n\t- [_target.call{value: 1000000000000000000}()](UncheckedExternalCall.sol#L6)\n",
+              "first_markdown_element": "UncheckedExternalCall.sol#L4-L7",
+              "id": "35dc5189210cfcb6b5aa23d7c279c286230f9bf9fc5c14a2cb854a6850dfabfb",
+              "check": "low-level-calls",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_target",
+                  "source_mapping": {
+                    "start": 87,
+                    "length": 15,
+                    "filename_relative": "UncheckedExternalCall.sol",
+                    "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\UncheckedExternalCall.sol",
+                    "filename_short": "UncheckedExternalCall.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      4
+                    ],
+                    "starting_column": 27,
+                    "ending_column": 42
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "callExternal",
+                      "source_mapping": {
+                        "start": 65,
+                        "length": 177,
+                        "filename_relative": "UncheckedExternalCall.sol",
+                        "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\UncheckedExternalCall.sol",
+                        "filename_short": "UncheckedExternalCall.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          4,
+                          5,
+                          6,
+                          7
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "UncheckedExternalCall",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 218,
+                            "filename_relative": "UncheckedExternalCall.sol",
+                            "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\UncheckedExternalCall.sol",
+                            "filename_short": "UncheckedExternalCall.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "callExternal(address)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter UncheckedExternalCall.callExternal(address)._target (UncheckedExternalCall.sol#4) is not in mixedCase\n",
+              "markdown": "Parameter [UncheckedExternalCall.callExternal(address)._target](UncheckedExternalCall.sol#L4) is not in mixedCase\n",
+              "first_markdown_element": "UncheckedExternalCall.sol#L4",
+              "id": "02c7451bb94c8cef4a322efa156e067b1bd3be3ea6a82f42737cbead7f390993",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_target",
+                  "source_mapping": {
+                    "start": 87,
+                    "length": 15,
+                    "filename_relative": "UncheckedExternalCall.sol",
+                    "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\UncheckedExternalCall.sol",
+                    "filename_short": "UncheckedExternalCall.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      4
+                    ],
+                    "starting_column": 27,
+                    "ending_column": 42
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "callExternal",
+                      "source_mapping": {
+                        "start": 65,
+                        "length": 177,
+                        "filename_relative": "UncheckedExternalCall.sol",
+                        "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\UncheckedExternalCall.sol",
+                        "filename_short": "UncheckedExternalCall.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          4,
+                          5,
+                          6,
+                          7
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "UncheckedExternalCall",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 218,
+                            "filename_relative": "UncheckedExternalCall.sol",
+                            "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\UncheckedExternalCall.sol",
+                            "filename_short": "UncheckedExternalCall.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "callExternal(address)"
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "_target.call{value: 1000000000000000000}()",
+                  "source_mapping": {
+                    "start": 202,
+                    "length": 32,
+                    "filename_relative": "UncheckedExternalCall.sol",
+                    "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\UncheckedExternalCall.sol",
+                    "filename_short": "UncheckedExternalCall.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      6
+                    ],
+                    "starting_column": 9,
+                    "ending_column": 41
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "callExternal",
+                      "source_mapping": {
+                        "start": 65,
+                        "length": 177,
+                        "filename_relative": "UncheckedExternalCall.sol",
+                        "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\UncheckedExternalCall.sol",
+                        "filename_short": "UncheckedExternalCall.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          4,
+                          5,
+                          6,
+                          7
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "UncheckedExternalCall",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 218,
+                            "filename_relative": "UncheckedExternalCall.sol",
+                            "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\UncheckedExternalCall.sol",
+                            "filename_short": "UncheckedExternalCall.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "callExternal(address)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "UncheckedExternalCall.callExternal(address)._target (UncheckedExternalCall.sol#4) lacks a zero-check on :\n\t\t- _target.call{value: 1000000000000000000}() (UncheckedExternalCall.sol#6)\n",
+              "markdown": "[UncheckedExternalCall.callExternal(address)._target](UncheckedExternalCall.sol#L4) lacks a zero-check on :\n\t\t- [_target.call{value: 1000000000000000000}()](UncheckedExternalCall.sol#L6)\n",
+              "first_markdown_element": "UncheckedExternalCall.sol#L4",
+              "id": "0a84dd3bec115d92e6ab719a084f2721c9a6a65335f4838ebc8805e5c5727ee9",
+              "check": "missing-zero-check",
+              "impact": "Low",
+              "confidence": "Medium"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "callExternal",
+                  "source_mapping": {
+                    "start": 65,
+                    "length": 177,
+                    "filename_relative": "UncheckedExternalCall.sol",
+                    "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\UncheckedExternalCall.sol",
+                    "filename_short": "UncheckedExternalCall.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      4,
+                      5,
+                      6,
+                      7
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "UncheckedExternalCall",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 218,
+                        "filename_relative": "UncheckedExternalCall.sol",
+                        "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\UncheckedExternalCall.sol",
+                        "filename_short": "UncheckedExternalCall.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    },
+                    "signature": "callExternal(address)"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "_target.call{value: 1000000000000000000}()",
+                  "source_mapping": {
+                    "start": 202,
+                    "length": 32,
+                    "filename_relative": "UncheckedExternalCall.sol",
+                    "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\UncheckedExternalCall.sol",
+                    "filename_short": "UncheckedExternalCall.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      6
+                    ],
+                    "starting_column": 9,
+                    "ending_column": 41
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "callExternal",
+                      "source_mapping": {
+                        "start": 65,
+                        "length": 177,
+                        "filename_relative": "UncheckedExternalCall.sol",
+                        "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\UncheckedExternalCall.sol",
+                        "filename_short": "UncheckedExternalCall.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          4,
+                          5,
+                          6,
+                          7
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "UncheckedExternalCall",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 218,
+                            "filename_relative": "UncheckedExternalCall.sol",
+                            "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\UncheckedExternalCall.sol",
+                            "filename_short": "UncheckedExternalCall.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "callExternal(address)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "UncheckedExternalCall.callExternal(address) (UncheckedExternalCall.sol#4-7) ignores return value by _target.call{value: 1000000000000000000}() (UncheckedExternalCall.sol#6)\n",
+              "markdown": "[UncheckedExternalCall.callExternal(address)](UncheckedExternalCall.sol#L4-L7) ignores return value by [_target.call{value: 1000000000000000000}()](UncheckedExternalCall.sol#L6)\n",
+              "first_markdown_element": "UncheckedExternalCall.sol#L4-L7",
+              "id": "4af09f0917fd356c9863801c08f66b114ed62f67f9e26f2a04455975fe966c4c",
+              "check": "unchecked-lowlevel",
+              "impact": "Medium",
+              "confidence": "Medium"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "callExternal",
+                  "source_mapping": {
+                    "start": 65,
+                    "length": 177,
+                    "filename_relative": "UncheckedExternalCall.sol",
+                    "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\UncheckedExternalCall.sol",
+                    "filename_short": "UncheckedExternalCall.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      4,
+                      5,
+                      6,
+                      7
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "UncheckedExternalCall",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 218,
+                        "filename_relative": "UncheckedExternalCall.sol",
+                        "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\UncheckedExternalCall.sol",
+                        "filename_short": "UncheckedExternalCall.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    },
+                    "signature": "callExternal(address)"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "_target.call{value: 1000000000000000000}()",
+                  "source_mapping": {
+                    "start": 202,
+                    "length": 32,
+                    "filename_relative": "UncheckedExternalCall.sol",
+                    "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\UncheckedExternalCall.sol",
+                    "filename_short": "UncheckedExternalCall.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      6
+                    ],
+                    "starting_column": 9,
+                    "ending_column": 41
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "callExternal",
+                      "source_mapping": {
+                        "start": 65,
+                        "length": 177,
+                        "filename_relative": "UncheckedExternalCall.sol",
+                        "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\UncheckedExternalCall.sol",
+                        "filename_short": "UncheckedExternalCall.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          4,
+                          5,
+                          6,
+                          7
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "UncheckedExternalCall",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 218,
+                            "filename_relative": "UncheckedExternalCall.sol",
+                            "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\UncheckedExternalCall.sol",
+                            "filename_short": "UncheckedExternalCall.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "callExternal(address)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "UncheckedExternalCall.callExternal(address) (UncheckedExternalCall.sol#4-7) sends eth to arbitrary user\n\tDangerous calls:\n\t- _target.call{value: 1000000000000000000}() (UncheckedExternalCall.sol#6)\n",
+              "markdown": "[UncheckedExternalCall.callExternal(address)](UncheckedExternalCall.sol#L4-L7) sends eth to arbitrary user\n\tDangerous calls:\n\t- [_target.call{value: 1000000000000000000}()](UncheckedExternalCall.sol#L6)\n",
+              "first_markdown_element": "UncheckedExternalCall.sol#L4-L7",
+              "id": "2c08bc5ab2e81a0eb8c3c4f41cf1899f89b6e1be3c33d7d54a0d51ce63ab8786",
+              "check": "arbitrary-send-eth",
+              "impact": "High",
+              "confidence": "Medium"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      },
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nTotal number of contracts in source files: 1\nSource lines of code (SLOC) in source files: 7\nNumber of  assembly lines: 0\nNumber of optimization issues: \u001b[92m1\u001b[0m\nNumber of informational issues: \u001b[92m2\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[91m1\u001b[0m\n",
+        "markdown": "\nCompiled with solc\nTotal number of contracts in source files: 1\nSource lines of code (SLOC) in source files: 7\nNumber of  assembly lines: 0\nNumber of optimization issues: \u001b[92m1\u001b[0m\nNumber of informational issues: \u001b[92m2\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[91m1\u001b[0m\n",
+        "first_markdown_element": "",
+        "id": "f231e98f335a971edb8455f8cfd9027aa35f150b9272e5b81ea8b1b49273565f",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "UninitializedVariable",
+                "source_mapping": {
+                  "start": 27,
+                  "length": 217,
+                  "filename_relative": "UninitializedVariable.sol",
+                  "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\UninitializedVariable.sol",
+                  "filename_short": "UninitializedVariable.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                },
+                "additional_fields": {
+                  "contract_name": "UninitializedVariable",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 1,
+                  "features": []
+                }
+              }
+            ]
+          },
+          "number_lines": 7,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 1,
+            "informational_issues": 2,
+            "low_issues": 0,
+            "medium_issues": 0,
+            "high_issues": 1
+          },
+          "detectors": [
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "uninitializedValue",
+                  "source_mapping": {
+                    "start": 65,
+                    "length": 33,
+                    "filename_relative": "UninitializedVariable.sol",
+                    "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\UninitializedVariable.sol",
+                    "filename_short": "UninitializedVariable.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      4
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 38
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "UninitializedVariable",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 217,
+                        "filename_relative": "UninitializedVariable.sol",
+                        "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\UninitializedVariable.sol",
+                        "filename_short": "UninitializedVariable.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "UninitializedVariable.uninitializedValue (UninitializedVariable.sol#4) should be constant \n",
+              "markdown": "[UninitializedVariable.uninitializedValue](UninitializedVariable.sol#L4) should be constant \n",
+              "first_markdown_element": "UninitializedVariable.sol#L4",
+              "id": "6cd4a8a19db8b6c2539f889473ed557c6c71891a137e8efb528f05d0b2e63f27",
+              "check": "constable-states",
+              "impact": "Optimization",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.8.0",
+                  "source_mapping": {
+                    "start": 0,
+                    "length": 23,
+                    "filename_relative": "UninitializedVariable.sol",
+                    "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\UninitializedVariable.sol",
+                    "filename_short": "UninitializedVariable.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      1
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 24
+                  },
+                  "type_specific_fields": {
+                    "directive": [
+                      "solidity",
+                      "^",
+                      "0.8",
+                      ".0"
+                    ]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.8.0 (UninitializedVariable.sol#1) allows old versions\n",
+              "markdown": "Pragma version[^0.8.0](UninitializedVariable.sol#L1) allows old versions\n",
+              "first_markdown_element": "UninitializedVariable.sol#L1",
+              "id": "2872cd0355fc497b03b80cd890838963c7d6420ee1e03fe940efecf23c6a4ad4",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [],
+              "description": "solc-0.8.20 is not recommended for deployment\n",
+              "markdown": "solc-0.8.20 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "5994d07edbbb82fc2013b486f41a2fa69898d896bb171a7f7c8bd767eb5b6521",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "uninitializedValue",
+                  "source_mapping": {
+                    "start": 65,
+                    "length": 33,
+                    "filename_relative": "UninitializedVariable.sol",
+                    "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\UninitializedVariable.sol",
+                    "filename_short": "UninitializedVariable.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      4
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 38
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "UninitializedVariable",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 217,
+                        "filename_relative": "UninitializedVariable.sol",
+                        "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\UninitializedVariable.sol",
+                        "filename_short": "UninitializedVariable.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "function",
+                  "name": "getValue",
+                  "source_mapping": {
+                    "start": 107,
+                    "length": 134,
+                    "filename_relative": "UninitializedVariable.sol",
+                    "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\UninitializedVariable.sol",
+                    "filename_short": "UninitializedVariable.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      6,
+                      7,
+                      8
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "UninitializedVariable",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 217,
+                        "filename_relative": "UninitializedVariable.sol",
+                        "filename_absolute": "C:\\Users\\malateef\\Desktop\\VulnerabilitySamples\\UninitializedVariable.sol",
+                        "filename_short": "UninitializedVariable.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    },
+                    "signature": "getValue()"
+                  }
+                }
+              ],
+              "description": "UninitializedVariable.uninitializedValue (UninitializedVariable.sol#4) is never initialized. It is used in:\n\t- UninitializedVariable.getValue() (UninitializedVariable.sol#6-8)\n",
+              "markdown": "[UninitializedVariable.uninitializedValue](UninitializedVariable.sol#L4) is never initialized. It is used in:\n\t- [UninitializedVariable.getValue()](UninitializedVariable.sol#L6-L8)\n",
+              "first_markdown_element": "UninitializedVariable.sol#L4",
+              "id": "92c3b1ce6f0dde33765d56b62e59382241eb03829c87f72707430c04d53c92d4",
+              "check": "uninitialized-state",
+              "impact": "High",
+              "confidence": "High"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}
